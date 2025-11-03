@@ -13,7 +13,7 @@ class BetaVAE(BaseVAE):
                  in_channels: int,
                  latent_dim: int,
                  hidden_dims: List = None,
-                 beta: int = 4,
+                 beta: int = 4, # Beta hyperparameter
                  gamma:float = 1000.,
                  max_capacity: int = 25,
                  Capacity_max_iter: int = 1e5,
