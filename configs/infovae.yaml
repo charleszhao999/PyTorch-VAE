@@ -12,7 +12,7 @@ data_params:
   train_batch_size: 64
   val_batch_size:  64
   patch_size: 64
-  num_workers: 0
+  num_workers: 16
 
 
 exp_params:
@@ -24,7 +24,7 @@ exp_params:
 
 trainer_params:
   gpus: [0]
-  max_epochs: 10
+  max_epochs: 100
   gradient_clip_val: 0.8
 
 logging_params:

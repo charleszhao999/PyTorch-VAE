@@ -21,7 +21,7 @@ parser.add_argument('--config',  '-c',
                     default='configs/vae.yaml')
 
 args = parser.parse_args()
-with open(args.filename, 'r') as file:
+with open(args.filename, 'r', encoding='utf-8') as file:
     try:
         config = yaml.safe_load(file)
     except yaml.YAMLError as exc:
